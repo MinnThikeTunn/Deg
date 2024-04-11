@@ -20,7 +20,7 @@ function Headline() {
 
   return (
     <>
-     <div className="hide hero ps-14 pt-64 lg:pt-72">
+     <div className="hide hero ps-14 pt-64 lg:pt-72 lg:pb-24">
     {header.map((header) => 
        <span className="overflow-hidden fade">
           <AnimatedText

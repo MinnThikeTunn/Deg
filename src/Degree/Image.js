@@ -1,7 +1,6 @@
 import './App.css';
 import { useInView,motion,AnimatePresence } from "framer-motion";
 import { useRef } from "react";
-import image from 'C:/Degree/degree/src/Degree/deg.jpg';
 
 function Image() {
   const ref = useRef(null)
@@ -18,7 +17,7 @@ function Image() {
           transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
       }} className="gap-2.5 image-container" ref={ref} >
        
-       <img src={image} className=" image inline-block " />
+       <img src="./images/deg.jpg" className=" image inline-block " />
 
     
 
@@ -33,7 +32,7 @@ function Image() {
           transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
       }} className="gap-2.5 image-container" ref={ref} >
        
-       <img src={image} className=" image inline-block " />
+       <img src="./images/deg.jpg" className=" image inline-block " />
 
     
 
