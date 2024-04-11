@@ -71,13 +71,13 @@ function MainSec() {
 
   return (
     <>
-      <div className="customHide py-44 gap-2.5 h-fit w-100 ">
+      <div className="customHide py-22 sm:py-44 gap-2.5 h-fit w-100 ">
         <div className="degree-container w-3/4 h-fit m-auto center">
             <div className="compo-1 h-fit">
               { headingLine.map((h1) => 
                 <div className="coverr">
                 
-                  <h1 className="sm:text-6xl text-lg py-10 font-medium"  onClick={onClick.bind(this,h1.id )}>
+                  <h1 className="sm:text-6xl text-lg sm:py-10 font-medium"  onClick={onClick.bind(this,h1.id )}>
                     <AnimatePresence>
                     <motion.span className="animator" initial={{ color: "#1C1D2080"}} animate={{ color: (h1.id === activeId) ? "#1c1d20" : "#1C1D2080"}} exit={{ color: "#1C1D2080"}} transition={{ type: "spring", stiffness: 100 }} >{h1.heading}</motion.span>
                     </AnimatePresence>
@@ -130,13 +130,13 @@ function MainSec() {
 
 
 
-    <div className="hideMe py-44 gap-2.5 h-fit w-100 ">
+    <div className="hideMe pb-22 sm:pb-44 gap-2.5 h-fit w-100 ">
         <div className="degree-container w-3/4 h-fit m-auto center">
-            <div className="compo-1 h-fit">
+            <div className="compo-1 h-fit pt-22 sm:pt-44">
               { headingLine.map((h1) => 
                 <div className="coverr">
                 
-                  <h1 className="text-6xl py-10 font-medium"  onClick={onClicker.bind(this,h1.id )}>
+                  <h1 className="text-6xl sm:py-10 font-medium"  onClick={onClicker.bind(this,h1.id )}>
                     <AnimatePresence>
                     <motion.span className="animator" initial={{ color: "#1C1D2080"}} animate={{ color: (h1.id === activeIds) ? "#1c1d20" : "#1C1D2080"}} exit={{ color: "#1C1D2080"}} transition={{ type: "spring", stiffness: 100 }} >{h1.heading}</motion.span>
                     </AnimatePresence>

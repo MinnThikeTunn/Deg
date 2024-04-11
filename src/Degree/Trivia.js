@@ -29,8 +29,8 @@ function Trivia() {
               {texts.map((item) => (
                 <>
                 <div className="lg:w-1/2 w-full  mb-6">
-                  <h1 className="font-medium text-3xl leading-5 triviaHead  py-8  ">{item.head}</h1>
-                  <p className="text-base font-normal leading-9 w-5/6">
+                  <h1 className="font-medium text-xl sm:text-3xl leading-5 triviaHead  py-8  ">{item.head}</h1>
+                  <p className="text-sxl sm:text-lg font-normal leading-8 sm:leading-10 w-full sm:w-5/6 opacity-80 tracking-wide">
                   {item.body}
                 </p>
                 </div>

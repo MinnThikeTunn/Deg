@@ -10,7 +10,7 @@ function Image() {
 
   return (
     <center>
-        <div className="sm:hidden image-section gap-2.5">
+        <div className="sm:hidden py-[62px] sm:py-[124px] image-section gap-2.5">
         
         <div style={{ 
           width: "100%",
@@ -25,7 +25,7 @@ function Image() {
   </div>
         </div>
 
-        <div className="hide image-section gap-2.5">
+        <div className="hide py-[62px] sm:py-[124px] image-section gap-2.5">
         
         <div style={{ 
           width: isInView ? "100%" : 0,

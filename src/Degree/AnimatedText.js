@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 const defaultAnimations = {
     hidden: {
       opacity: 0,
-      y: 20
+      y: 40
     },
     visible: {
       opacity: 1,
@@ -20,7 +20,7 @@ const defaultAnimations = {
       const isInView = useInView(ref, {amount: 0.8, once: true});
       return (<Wrapper className={className}>
         <AnimatePresence>
-        <motion.span ref={ref} initial="hidden" animate={isInView ? "visible" : "hidden"}  transition={{ staggerChildren: 0.01 }} aria-hidden>
+        <motion.span ref={ref} initial="hidden" animate={isInView ? "visible" : "hidden"}  transition={{ staggerChildren: 0.04 }} aria-hidden>
           {text.split(" ").map((word) => (
             <span className="inline-block">
             {word.split('').map(char => <motion.span className="inline-block" variants={defaultAnimations}>{char}</motion.span>)}

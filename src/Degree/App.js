@@ -11,8 +11,7 @@ function App() {
 
   return (
     <>
-    <Nav />
-      <div className="main px-4">
+      <div className="main px-2">
       
       <Headline />
       <Image />
